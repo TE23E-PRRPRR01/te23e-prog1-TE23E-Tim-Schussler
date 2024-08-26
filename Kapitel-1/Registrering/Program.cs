@@ -8,8 +8,11 @@ string förnamn = Console.ReadLine();
 Console.WriteLine("Ange efternamn");
 string efternamn = Console.ReadLine();
 Console.WriteLine("Välkommen " + förnamn + " " + efternamn);
+ //ITSA ME?
+ if (förnamn == "Tim")
+ {
 Console.WriteLine("█░███░█");
 Console.WriteLine("███████");
 Console.WriteLine("█░███░█");
 Console.WriteLine("█░░░░░█");
- 
+ }
