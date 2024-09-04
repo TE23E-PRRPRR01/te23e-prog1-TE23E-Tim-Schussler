@@ -470,6 +470,64 @@ Console.WriteLine("░ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐█▌
 Console.WriteLine("░ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒║▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ░");
 Console.WriteLine("░▒▒▒▒▒▒▒▒▒▒▒▒        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░");
 Console.WriteLine("╔═══════════════════════════════════════╗");
-Console.WriteLine("║You find yourself in a cold room       ║");
+Console.WriteLine("║There's 2 doors, one leads to treasure ║");
+Console.WriteLine("║The other one leads to your DOOM       ║");
+Console.WriteLine("║             Choose wisely...          ║");
 Console.WriteLine("║ [A.Go Left] [B. Go Down] [C. Go Right]║");
 Console.WriteLine("╚═══════════════════════════════════════╝");
+choice = Console.ReadLine();
+if (choice == "a"){
+    goto doom;
+}
+if (choice == "b"){
+    goto treasure;
+}
+if (choice == "c"){
+    goto doom;
+}
+goto LFStart;
+doom:
+Console.Clear();
+Console.WriteLine("╔═══════════════════════════════════════╗");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+Console.WriteLine(".");
+System.Threading.Thread.Sleep(5000);
+Console.Write("You ");
+System.Threading.Thread.Sleep(250);
+Console.Write("died!");
+System.Threading.Thread.Sleep(1000);
+goto gameover;
+treasure:
+Console.Clear(); 
+Console.WriteLine("╔═══════════════════════════════════════╗");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+System.Threading.Thread.Sleep(1000);
+Console.Write(".");
+System.Threading.Thread.Sleep(1000);
+Console.WriteLine(".");
+System.Threading.Thread.Sleep(5000);
+Console.WriteLine("You stepped forward into the empty room");
+System.Threading.Thread.Sleep(1000);
+Console.Write("You found....");
+System.Threading.Thread.Sleep(1000);
+Console.WriteLine(" something.");
+Console.WriteLine("╚═══════════════════════════════════════╝");
+System.Threading.Thread.Sleep(1000);
+Console.WriteLine("Thanks for playing!");
+Console.WriteLine("Made by Tim Schüssler");
+Console.WriteLine(@"
+O     O
+ \____/
+");
