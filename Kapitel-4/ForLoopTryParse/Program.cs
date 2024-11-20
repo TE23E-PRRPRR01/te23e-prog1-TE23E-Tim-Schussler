@@ -1,5 +1,6 @@
 ﻿//Program för hantering av användarens inmatning
 //    bool lyckades = int.TryParse(Console.ReadLine(), out heltal);
+while(true){
 Console.Clear();
 // Ange namn
 Console.Write("Skriv namn: ");
@@ -34,7 +35,15 @@ while(true){
     }
     Console.WriteLine("Fel inmatning");
 }
+// Gör Anräkningar
 Console.WriteLine($"Multiplicerat med 2: {tal * 2}");
 Console.WriteLine($"Dividerat med 2: {tal / 2}");
 Console.WriteLine($"Adderat med 2: {tal + 2}");
 Console.WriteLine($"Subtraherat med 2: {tal - 2}");
+// Avgör om programmet ska köras igen
+Console.Write("Kör igen? (j/n) ");
+string val = Console.ReadLine();
+if (val == "n" || val == "N"){
+    break;
+}
+}
